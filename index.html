@@ -1069,7 +1069,7 @@
 
             toggleAll() {
                 const allItems = this.getAllItems();
-                const allChecked = Object.keys(allItems).every(id => this.checkedState[id]);
+                const allChecked = Object.keys(allItems).every(id => this.checkedState[id] === true);
                 
                 for (let id in allItems) {
                     this.checkedState[id] = !allChecked;
