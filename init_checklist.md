@@ -92,7 +92,7 @@
 
 ### Philosophy & Thought
 
-- [ ] Read key Confucius Analerta (论语) excerpts
+- [ ] Read key Confucius Analects (论语) excerpts
 - [ ] Understand core Daoist concepts (Dao De Jing, wu wei, yin-yang)
 - [ ] Learn about Legalism (Han Feizi) and its influence on governance
 - [ ] Explore Chinese Buddhism and its distinct evolution

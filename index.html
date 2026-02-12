@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇨🇳 CHINAMAXXING Checklist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+            background: linear-gradient(45deg, #FF1744 0%, #F50057 25%, #D500F9 50%, #651FFF 75%, #2979FF 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border: 8px solid #000;
+            border-radius: 0;
+            box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle, #FF1744 2px, transparent 2px),
+                radial-gradient(circle, #2979FF 2px, transparent 2px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #FFD600 0%, #FF6D00 100%);
+            border-bottom: 6px solid #000;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                4px 4px 0 #FF1744,
+                8px 8px 0 #2979FF,
+                12px 12px 0 #00E676;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .stats {
+            background: #FFD600;
+            border: 4px solid #000;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #FF1744;
+            text-shadow: 2px 2px 0 #fff;
+        }
+
+        .progress-bar {
+            background: #000;
+            height: 30px;
+            margin: 20px;
+            border: 4px solid #000;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00E676, #FFD600, #FF1744);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #000;
+            font-size: 1rem;
+        }
+
+        main {
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border: 6px solid #000;
+            background: #fff;
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #FF1744, #F50057);
+            padding: 20px;
+            border-bottom: 6px solid #000;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .section-header:hover {
+            transform: scale(1.02);
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .section:nth-child(2n) .section-header {
+            background: linear-gradient(135deg, #2979FF, #651FFF);
+        }
+
+        .section:nth-child(3n) .section-header {
+            background: linear-gradient(135deg, #00E676, #00BFA5);
+        }
+
+        .section:nth-child(4n) .section-header {
+            background: linear-gradient(135deg, #FFD600, #FF6D00);
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .subsection {
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #000;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 12px 0;
+            padding: 12px;
+            border: 3px solid #000;
+            background: #fff;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .checklist-item:hover {
+            transform: translateX(5px);
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .checklist-item.checked {
+            background: linear-gradient(135deg, #FFD600 0%, #FFF59D 100%);
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .checklist-item.checked::after {
+            content: '✓';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #00E676;
+            text-shadow: 2px 2px 0 #000;
+            font-weight: bold;
+        }
+
+        .checkbox {
+            width: 30px;
+            height: 30px;
+            border: 4px solid #000;
+            background: #fff;
+            margin-right: 15px;
+            flex-shrink: 0;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .checkbox:hover {
+            background: #FFD600;
+        }
+
+        .checkbox.checked {
+            background: #FF1744;
+        }
+
+        .checkbox.checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .item-text {
+            flex: 1;
+            font-size: 1.1rem;
+            color: #000;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .indent-1 {
+            margin-left: 30px;
+        }
+
+        .indent-2 {
+            margin-left: 60px;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 4px solid #000;
+            background: #FFD600;
+            cursor: pointer;
+            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+            transition: all 0.2s;
+            color: #000;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-danger {
+            background: #FF1744;
+            color: #fff;
+        }
+
+        hr {
+            border: none;
+            border-top: 4px solid #000;
+            margin: 30px 0;
+        }
+
+        blockquote {
+            background: linear-gradient(135deg, #2979FF, #651FFF);
+            border-left: 8px solid #000;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                text-shadow: 
+                    2px 2px 0 #FF1744,
+                    4px 4px 0 #2979FF,
+                    6px 6px 0 #00E676;
+            }
+
+            .container {
+                border: 4px solid #000;
+            }
+
+            .controls {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .collapse-icon {
+            float: right;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .section.collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        .section.collapsed .section-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇨🇳 CHINAMAXXING</h1>
+            <div class="subtitle">Master TODO Checklist</div>
+        </header>
+
+        <div class="stats">
+            <div class="stats-content">
+                <div class="stat-item">
+                    <div class="stat-number" id="completed-count">0</div>
+                    <div>Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-count">0</div>
+                    <div>Total Items</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="percentage">0%</div>
+                    <div>Progress</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%">
+                <span id="progress-text">GET STARTED!</span>
+            </div>
+        </div>
+
+        <main id="checklist-content">
+            <!-- Checklist will be dynamically generated here -->
+        </main>
+    </div>
+
+    <div class="controls">
+        <button class="btn" id="toggle-all">Toggle All</button>
+        <button class="btn btn-danger" id="reset-all">Reset All</button>
+    </div>
+
+    <script>
+        // Parse the markdown checklist
+        const markdownContent = `# 🇨🇳 CHINAMAXXING — Master TODO Checklist
+
+-----
+
+## 1. 🗣️ Language (Mandarin Chinese)
+
+### Foundations
+
+- [ ] Learn Pinyin system and all initials/finals
+- [ ] Master the 4 tones + neutral tone
+  - [ ] Practice tone pairs (all 20 combinations)
+  - [ ] Record yourself and compare with native audio
+- [ ] Learn stroke order basics for writing characters
+- [ ] Choose simplified vs. traditional (or both) — start with simplified
+
+### HSK Progression
+
+- [ ] **HSK 1** — 150 words, basic greetings, numbers, time
+  - [ ] Complete an HSK 1 textbook (e.g., Standard Course)
+  - [ ] Pass HSK 1 practice test
+- [ ] **HSK 2** — 300 words, simple daily conversations
+  - [ ] Start reading graded readers (Level 1)
+  - [ ] Hold a 5-minute conversation with a tutor
+- [ ] **HSK 3** — 600 words, travel and daily life
+  - [ ] Write a short diary entry in Chinese weekly
+  - [ ] Watch a C-drama episode with Chinese subtitles
+- [ ] **HSK 4** — 1,200 words, discuss abstract topics
+  - [ ] Read a short news article on Sixth Tone or The Paper (澎湃)
+  - [ ] Give a 3-minute spoken summary of a topic
+- [ ] **HSK 5** — 2,500 words, read newspapers and novels
+  - [ ] Read a Chinese novel (e.g., 活着 by 余华)
+  - [ ] Write a 500-character essay
+- [ ] **HSK 6** — 5,000+ words, near-fluent comprehension
+  - [ ] Watch CCTV news without subtitles
+  - [ ] Hold a 30-minute unscripted conversation on politics or culture
+
+### Tools & Practice
+
+- [ ] Install Pleco dictionary app
+- [ ] Set up Anki with HSK decks
+- [ ] Join italki or HelloTalk for language exchange
+- [ ] Subscribe to a Chinese podcast (e.g., ChinesePod, 慢速中文)
+- [ ] Practice handwriting: learn 50 most common radicals
+- [ ] Switch phone language to Simplified Chinese for 1 month
+
+-----
+
+## 2. 📱 Digital Ecosystem
+
+### Core Apps
+
+- [ ] Set up **WeChat** (微信)
+  - [ ] Add contacts, join a group chat
+  - [ ] Link WeChat Pay (if possible outside China)
+  - [ ] Explore Mini Programs (小程序)
+- [ ] Create a **Xiaohongshu / RED** (小红书) account
+  - [ ] Follow 10 lifestyle/culture accounts
+  - [ ] Make your first post
+- [ ] Install **Douyin** (抖音, Chinese TikTok)
+  - [ ] Curate your feed toward Chinese learning content
+- [ ] Create a **Bilibili** (B站) account
+  - [ ] Subscribe to 5 educational/entertainment channels
+  - [ ] Watch a full series with danmu (弹幕) comments on
+- [ ] Set up **Alipay** (支付宝) — explore international version
+
+### Shopping & Logistics
+
+- [ ] Browse **Taobao** (淘宝) — understand the interface
+- [ ] Explore **JD.com** (京东) for electronics
+- [ ] Learn about forwarding services for shipping to Canada
+
+### Infrastructure
+
+- [ ] Obtain a Chinese phone number (via eSIM or travel SIM)
+- [ ] Understand the Great Firewall — what's blocked, what's not
+- [ ] Familiarize yourself with QR code culture (payments, menus, bikes)
+
+-----
+
+## 3. 🏯 Culture & Knowledge
+
+### History Overview
+
+- [ ] Prehistoric & dynastic timeline — know the major dynasties
+  - [ ] Xia → Shang → Zhou → Qin → Han
+  - [ ] Tang → Song → Yuan → Ming → Qing
+- [ ] Understand the Century of Humiliation (百年耻辱)
+- [ ] Chinese Civil War and founding of PRC (1949)
+- [ ] Cultural Revolution — causes and impact
+- [ ] Reform and Opening Up (改革开放, 1978) — Deng Xiaoping era
+- [ ] Modern China: rise as global power (2000s–present)
+
+### Philosophy & Thought
+
+- [ ] Read key Confucius Analects (论语) excerpts
+- [ ] Understand core Daoist concepts (Dao De Jing, wu wei, yin-yang)
+- [ ] Learn about Legalism (Han Feizi) and its influence on governance
+- [ ] Explore Chinese Buddhism and its distinct evolution
+- [ ] Understand the concept of 面子 (face) and 关系 (guanxi)
+
+### Customs & Etiquette
+
+- [ ] Learn Chinese table manners and dining etiquette
+- [ ] Understand gift-giving customs (what to give and avoid)
+- [ ] Learn about major holidays and their meaning
+  - [ ] Chinese New Year / Spring Festival (春节)
+  - [ ] Mid-Autumn Festival (中秋节)
+  - [ ] Qingming (清明节), Dragon Boat (端午节), National Day (国庆节)
+- [ ] Understand number symbolism (8 = lucky, 4 = unlucky)
+- [ ] Learn about Chinese zodiac — know your animal
+
+-----
+
+## 4. 🏛️ Political System Understanding
+
+### Government Structure
+
+- [ ] Understand the CCP (中国共产党) structure and hierarchy
+  - [ ] Politburo Standing Committee — who's on it
+  - [ ] Role of the General Secretary
+- [ ] National People's Congress (全国人民代表大会) — how legislation works
+- [ ] Chinese People's Political Consultative Conference (CPPCC) — advisory role
+- [ ] Role of the State Council and Premier
+
+### Policy & Governance
+
+- [ ] Understand how Five-Year Plans work and their significance
+- [ ] Learn about the cadre evaluation system and promotion logic
+- [ ] Study the social credit system — what it is and isn't
+- [ ] Understand the hukou (户口) household registration system
+- [ ] Learn about censorship mechanisms and information control
+
+### Geopolitics
+
+- [ ] Taiwan situation — historical context and current status
+- [ ] Hong Kong — One Country Two Systems, 2019 protests, NSL
+- [ ] Xinjiang and Tibet — official narrative vs. international criticism
+- [ ] Belt and Road Initiative (BRI / 一带一路) — scope and impact
+- [ ] China's role in international organizations
+  - [ ] UN Security Council permanent member
+  - [ ] BRICS — founding member and influence
+  - [ ] Shanghai Cooperation Organisation (SCO)
+  - [ ] AIIB (Asian Infrastructure Investment Bank)
+- [ ] US-China relations — trade wars, tech decoupling, competition
+- [ ] China-Canada relations — understand the dynamics and friction points
+
+### Recommended Reading / Watching
+
+- [ ] Read "The Party" by Richard McGregor
+- [ ] Watch a CGTN documentary + compare with Western coverage of same event
+- [ ] Follow a balanced China analyst (e.g., Bill Bishop's Sinocism newsletter)
+
+-----
+
+## 5. 🎬 Media Consumption
+
+### TV & Film
+
+- [ ] Watch 3 classic Chinese films
+  - [ ] Farewell My Concubine (霸王别姬)
+  - [ ] In the Mood for Love (花样年华)
+  - [ ] To Live (活着)
+- [ ] Watch a popular C-drama series
+  - [ ] Historical: Nirvana in Fire (琅琊榜) or Story of Yanxi Palace
+  - [ ] Modern: Go Ahead (以家人之名) or Reset (开端)
+- [ ] Explore Chinese animation (donghua) — e.g., Fog Hill of Five Elements
+
+### Music
+
+- [ ] Create a C-pop / Mandopop playlist
+  - [ ] Jay Chou (周杰伦) — at least 10 songs
+  - [ ] Eason Chan, Faye Wong, JJ Lin, Deng Ziqi
+- [ ] Explore Chinese indie / rock (e.g., 万能青年旅店, 新裤子)
+- [ ] Listen to a Beijing opera or Kunqu excerpt
+
+### Literature
+
+- [ ] Read a modern Chinese novel in translation
+  - [ ] "To Live" (活着) — Yu Hua
+  - [ ] "Three-Body Problem" (三体) — Liu Cixin
+  - [ ] "Red Sorghum" — Mo Yan
+- [ ] Read classical poetry — Li Bai (李白), Du Fu (杜甫), Wang Wei
+- [ ] Explore Chinese sci-fi beyond Liu Cixin
+
+### Online Content
+
+- [ ] Follow 5 China-focused YouTube channels
+- [ ] Subscribe to Chinese language learning podcasts
+- [ ] Read Sixth Tone or SupChina regularly for current affairs
+
+-----
+
+## 6. 🍜 Food & Cooking
+
+### The Eight Great Cuisines — Taste & Study
+
+- [ ] Sichuan (川菜) — mapo tofu, kung pao chicken, hotpot
+- [ ] Cantonese (粤菜) — dim sum, char siu, wonton noodle soup
+- [ ] Shandong (鲁菜) — braised sea cucumber, sweet and sour carp
+- [ ] Jiangsu (苏菜) — lion's head meatballs, sweet and sour ribs
+- [ ] Zhejiang (浙菜) — Dongpo pork, West Lake fish
+- [ ] Fujian (闽菜) — oyster omelette, Buddha Jumps Over the Wall
+- [ ] Hunan (湘菜) — Chairman Mao's red braised pork, steamed fish head
+- [ ] Anhui (徽菜) — stinky tofu, bamboo shoot dishes
+
+### Cooking Milestones
+
+- [ ] Master egg fried rice (蛋炒饭) — the true test
+- [ ] Make proper hand-pulled noodles or knife-cut noodles (刀削面)
+- [ ] Cook mapo tofu from scratch
+- [ ] Make dumplings (饺子) — filling and folding
+- [ ] Prepare a proper stir-fry with wok hei
+- [ ] Steam bao buns (包子)
+- [ ] Brew tea properly using gongfu cha (功夫茶) method
+
+### Drinks
+
+- [ ] Understand Chinese tea categories (green, black, oolong, pu-erh, white, yellow)
+- [ ] Attend a tea tasting or visit a Chinese tea shop
+- [ ] Survive a baijiu (白酒) tasting — know the etiquette
+  - [ ] Learn the ganbei (干杯) toasting protocol
+- [ ] Try Chinese beer brands (Tsingtao, Snow, Harbin)
+
+### Food Culture
+
+- [ ] Understand "communal eating" — lazy Susan etiquette
+- [ ] Learn chopstick do's and don'ts
+- [ ] Try ordering entirely in Chinese at a Chinese restaurant
+- [ ] Use a Chinese recipe app (下厨房 Xiachufang)
+
+-----
+
+## 7. 👔 Style & Grooming
+
+- [ ] Research current Chinese fashion trends (Douyin, RED)
+  - [ ] Understand 国潮 (guochao) — national pride fashion trend
+- [ ] Explore Chinese fashion brands (Li-Ning, Anta, Bosideng, JNBY)
+- [ ] Adopt a multi-step skincare routine
+  - [ ] Research Chinese/Korean skincare overlap
+  - [ ] Try popular Chinese beauty brands (Florasis 花西子, Perfect Diary)
+- [ ] Understand Chinese grooming standards for men/women
+- [ ] Get familiar with Hanfu (汉服) revival movement
+- [ ] Own at least one item with Chinese design elements
+
+-----
+
+## 8. ✈️ Travel & Living in China
+
+### Pre-Trip Logistics
+
+- [ ] Research visa types (tourist L, business M, student X, work Z)
+- [ ] Apply for appropriate visa at Chinese consulate
+- [ ] Register with Canadian embassy for travel advisories
+- [ ] Get travel insurance that covers China
+- [ ] Download offline maps and translation tools
+
+### Getting Around
+
+- [ ] Learn to use Didi (滴滴) for ride-hailing
+- [ ] Book a high-speed rail ticket (12306 app or Trip.com)
+- [ ] Navigate a Chinese metro system
+- [ ] Rent a shared bike (Meituan Bike, Hellobike)
+- [ ] Understand domestic flights booking (Ctrip / Trip.com)
+
+### Must-Visit Destinations
+
+- [ ] Beijing — Great Wall, Forbidden City, hutongs, 798 Art District
+- [ ] Shanghai — The Bund, Yu Garden, French Concession, Pudong skyline
+- [ ] Chengdu — pandas, Sichuan food, teahouses
+- [ ] Xi'an — Terracotta Warriors, Muslim Quarter, city walls
+- [ ] Guilin / Yangshuo — karst landscapes, Li River
+- [ ] Yunnan — Dali, Lijiang, Tiger Leaping Gorge
+- [ ] Hong Kong — Victoria Peak, street food, temple markets
+- [ ] Taipei — night markets, Jiufen, hot springs (if doing Greater China)
+
+### Survival Skills
+
+- [ ] Memorize 20 essential travel phrases in Mandarin
+- [ ] Handle cash + digital payments (many places are cashless-only)
+- [ ] Navigate a Chinese hotel check-in (passport registration)
+- [ ] Order food from a QR code menu
+
+-----
+
+## 9. 🤝 Social & Networking
+
+- [ ] Find a language exchange partner (Tandem, HelloTalk)
+- [ ] Join a local Chinese cultural association or Mandarin meetup
+- [ ] Attend a Chinese New Year event in your city
+- [ ] Make 3+ Chinese-speaking friends (in person or online)
+- [ ] Join Chinese-interest communities on Reddit, Discord, or WeChat groups
+- [ ] Attend a Chinese diaspora community event in Canada
+- [ ] Host or join a Chinese cooking night with friends
+- [ ] Practice having full conversations only in Mandarin for an evening
+
+-----
+
+## 10. 🥋 Fitness & Wellness
+
+### Martial Arts & Movement
+
+- [ ] Try a Tai Chi (太极拳) class — learn the 24-form
+- [ ] Explore a Chinese martial art
+  - [ ] Wing Chun (咏春拳)
+  - [ ] Shaolin Kung Fu
+  - [ ] Wushu (competitive martial arts)
+- [ ] Practice Qigong (气功) — learn a basic routine
+- [ ] Try Chinese stretching / flexibility exercises
+
+### Traditional Chinese Medicine (TCM)
+
+- [ ] Understand the basics — qi, meridians, yin/yang balance
+- [ ] Visit a TCM practitioner for a consultation
+- [ ] Try acupuncture or cupping
+- [ ] Learn about Chinese herbal remedies (basic awareness)
+- [ ] Explore Chinese dietary therapy concepts (food as medicine)
+
+### Wellness Habits
+
+- [ ] Drink hot water habitually (the Chinese way 喝热水)
+- [ ] Try a Chinese bathhouse experience
+- [ ] Learn basic acupressure points for common ailments
+
+-----
+
+## 11. 💰 Investment — China-Exposed Indexed Funds (Canada)
+
+### Education & Setup
+
+- [ ] Understand the difference between Chinese market indices
+  - [ ] MSCI China vs. CSI 300 vs. FTSE China
+  - [ ] A-shares (mainland) vs. H-shares (Hong Kong) vs. ADRs (US-listed)
+- [ ] Open a self-directed brokerage account if not already done
+  - [ ] Questrade, Wealthsimple Trade, or IBKR
+- [ ] Understand TFSA and RRSP eligibility for foreign ETFs
+- [ ] Learn about withholding tax implications on Chinese/HK dividends
+
+### Canadian-Listed ETFs to Research
+
+- [ ] **XEC** — iShares Core MSCI Emerging Markets (broad, includes China ~25-30%)
+- [ ] **VEE** — Vanguard FTSE Emerging Markets All Cap (similar broad EM)
+- [ ] **ZEM** — BMO MSCI Emerging Markets (another broad EM option)
+- [ ] **HXQ** — Horizons China High Dividend Yield (more China-focused)
+- [ ] Research US-listed options accessible in Canada
+  - [ ] MCHI — iShares MSCI China ETF
+  - [ ] KWEB — KraneShares CSI China Internet ETF
+  - [ ] FXI — iShares China Large-Cap ETF
+  - [ ] CNYA — iShares MSCI China A ETF (A-shares access)
+
+### Risk Awareness
+
+- [ ] Understand regulatory risk (VIE structures, delistings)
+- [ ] Study currency risk (CAD → USD → CNY/HKD exposure)
+- [ ] Review geopolitical risk and its impact on Chinese equities
+- [ ] Read about the real estate sector situation (Evergrande, etc.)
+- [ ] Understand capital controls and repatriation limitations
+- [ ] Set a personal allocation limit for China exposure (e.g., 5-15% of portfolio)
+
+### Action Plan
+
+- [ ] Decide on a broad EM fund vs. China-specific fund strategy
+- [ ] Make first purchase in TFSA or RRSP
+- [ ] Set up automatic contributions if using DCA strategy
+- [ ] Review holdings quarterly for rebalancing
+
+-----
+
+## 12. 💼 Career & Business
+
+- [ ] Learn Chinese business card exchange etiquette
+  - [ ] Present and receive with both hands
+  - [ ] Study the card before putting it away
+- [ ] Understand Chinese negotiation style (patience, relationship-first)
+- [ ] Study the concept of 关系 (guanxi) in business
+- [ ] Explore Maimai (脉脉) — China's LinkedIn equivalent
+- [ ] Learn about banquet culture and business drinking etiquette
+- [ ] Understand the basics of importing goods from China
+  - [ ] Alibaba sourcing, 1688.com for wholesale
+  - [ ] Canadian customs and duties
+- [ ] Network with Chinese-Canadian business associations
+- [ ] Add Mandarin proficiency to your resume / LinkedIn
+
+-----
+
+## 13. 🎲 Offbeat / Bucket List
+
+### Experiences
+
+- [ ] Play Mahjong (麻将) — learn the rules, play a full game, win once
+- [ ] Sing at a Chinese KTV (karaoke) — perform a full song in Mandarin
+- [ ] Survive a family-style dinner where you're the only non-Chinese speaker
+- [ ] Haggle successfully at a Chinese market (in Mandarin)
+- [ ] Get a Chinese name (中文名) — have a native speaker help you choose
+- [ ] Calligraphy session — write your Chinese name with brush and ink
+- [ ] Fly a kite in a Chinese park like a retiree
+- [ ] Join a morning tai chi group in a public park (in China or Chinatown)
+- [ ] Win an argument about which regional cuisine is the best
+- [ ] Successfully order a complex Starbucks drink entirely in Mandarin
+
+### Adventurous
+
+- [ ] Hike a section of the Great Wall that tourists DON'T go to
+- [ ] Take an overnight hard-sleeper train across China
+- [ ] Eat something genuinely challenging (stinky tofu level 10, century egg, chicken feet, scorpion skewer)
+- [ ] Attend a Chinese wedding as a guest
+- [ ] Visit a rural village and stay with a local family
+- [ ] Participate in a Dragon Boat race
+- [ ] Watch a live Peking Opera performance — stay for the whole thing
+- [ ] Bike through the old city walls of Xi'an at sunset
+
+### Digital & Pop Culture
+
+- [ ] Go viral (or at least post) on Xiaohongshu or Douyin
+- [ ] Beat a Chinese mobile game that's trending (e.g., 原神 Genshin Impact counts)
+- [ ] Binge-watch an entire C-drama in one weekend — no English subs
+- [ ] Memorize and recite a Chinese poem (bonus: classical Chinese)
+- [ ] Collect 10 Chinese fridge magnets from different provinces
+
+### Social Achievements
+
+- [ ] Be complimented on your Mandarin by a stranger: "你的中文很好！"
+- [ ] Be mistaken for someone who's lived in China
+- [ ] Successfully explain a Canadian cultural concept in Mandarin
+- [ ] Teach someone Chinese Mahjong who's never played
+- [ ] Have a full WeChat Moments feed that looks legit Chinese
+
+-----
+
+> **Remember:** Chinamaxxing is a marathon, not a sprint. 加油! (jiā yóu — keep going!) 🐉`;
+
+        class ChecklistApp {
+            constructor() {
+                this.items = [];
+                this.checkedState = this.loadState();
+                this.init();
+            }
+
+            loadState() {
+                const saved = localStorage.getItem('chinamaxxing-checklist');
+                return saved ? JSON.parse(saved) : {};
+            }
+
+            saveState() {
+                localStorage.setItem('chinamaxxing-checklist', JSON.stringify(this.checkedState));
+            }
+
+            init() {
+                this.parseMarkdown();
+                this.render();
+                this.attachEventListeners();
+                this.updateStats();
+            }
+
+            parseMarkdown() {
+                const lines = markdownContent.split('\n');
+                let currentSection = null;
+                let currentSubsection = null;
+                let itemId = 0;
+                let indentLevel = 0;
+
+                for (let line of lines) {
+                    // Skip empty lines and horizontal rules
+                    if (!line.trim() || line.trim() === '-----') continue;
+
+                    // Section headers (##)
+                    if (line.match(/^## \d+\./)) {
+                        currentSection = {
+                            type: 'section',
+                            title: line.replace(/^## /, '').trim(),
+                            subsections: [],
+                            items: []
+                        };
+                        this.items.push(currentSection);
+                        currentSubsection = null;
+                        continue;
+                    }
+
+                    // Subsection headers (###)
+                    if (line.match(/^###/)) {
+                        currentSubsection = {
+                            type: 'subsection',
+                            title: line.replace(/^### /, '').trim(),
+                            items: []
+                        };
+                        if (currentSection) {
+                            currentSection.subsections.push(currentSubsection);
+                        }
+                        continue;
+                    }
+
+                    // Checklist items
+                    if (line.match(/^\s*- \[ \]/)) {
+                        const indent = (line.match(/^\s+/) || [''])[0].length;
+                        indentLevel = indent > 0 ? Math.floor(indent / 2) : 0;
+                        
+                        const text = line.replace(/^\s*- \[ \]/, '').trim();
+                        const item = {
+                            type: 'item',
+                            id: itemId,
+                            text: text,
+                            indent: indentLevel,
+                            checked: this.checkedState[itemId] || false
+                        };
+                        itemId++;
+
+                        if (currentSubsection) {
+                            currentSubsection.items.push(item);
+                        } else if (currentSection) {
+                            currentSection.items.push(item);
+                        }
+                    }
+
+                    // Blockquote
+                    if (line.match(/^>/)) {
+                        this.items.push({
+                            type: 'blockquote',
+                            text: line.replace(/^>\s*/, '').trim()
+                        });
+                    }
+                }
+            }
+
+            render() {
+                const container = document.getElementById('checklist-content');
+                container.innerHTML = '';
+
+                for (let section of this.items) {
+                    if (section.type === 'section') {
+                        const sectionEl = this.createSection(section);
+                        container.appendChild(sectionEl);
+                    } else if (section.type === 'blockquote') {
+                        const blockquote = document.createElement('blockquote');
+                        blockquote.textContent = section.text;
+                        container.appendChild(blockquote);
+                    }
+                }
+            }
+
+            createSection(section) {
+                const sectionEl = document.createElement('div');
+                sectionEl.className = 'section';
+
+                const header = document.createElement('div');
+                header.className = 'section-header';
+                header.innerHTML = `<h2>${section.title} <span class="collapse-icon">▼</span></h2>`;
+                header.addEventListener('click', () => {
+                    sectionEl.classList.toggle('collapsed');
+                });
+
+                const content = document.createElement('div');
+                content.className = 'section-content';
+
+                // Render subsections
+                for (let subsection of section.subsections) {
+                    const subsectionEl = document.createElement('div');
+                    subsectionEl.className = 'subsection';
+                    subsectionEl.innerHTML = `<h3>${subsection.title}</h3>`;
+                    
+                    for (let item of subsection.items) {
+                        subsectionEl.appendChild(this.createItem(item));
+                    }
+                    
+                    content.appendChild(subsectionEl);
+                }
+
+                // Render direct items
+                for (let item of section.items) {
+                    content.appendChild(this.createItem(item));
+                }
+
+                sectionEl.appendChild(header);
+                sectionEl.appendChild(content);
+                return sectionEl;
+            }
+
+            createItem(item) {
+                const itemEl = document.createElement('div');
+                itemEl.className = `checklist-item ${item.checked ? 'checked' : ''} ${item.indent > 0 ? 'indent-' + item.indent : ''}`;
+                itemEl.dataset.id = item.id;
+
+                const checkbox = document.createElement('div');
+                checkbox.className = `checkbox ${item.checked ? 'checked' : ''}`;
+
+                const text = document.createElement('div');
+                text.className = 'item-text';
+                text.textContent = item.text;
+
+                itemEl.appendChild(checkbox);
+                itemEl.appendChild(text);
+
+                itemEl.addEventListener('click', () => this.toggleItem(item.id));
+
+                return itemEl;
+            }
+
+            toggleItem(id) {
+                this.checkedState[id] = !this.checkedState[id];
+                this.saveState();
+                this.render();
+                this.updateStats();
+            }
+
+            updateStats() {
+                const total = Object.keys(this.getAllItems()).length;
+                const completed = Object.values(this.checkedState).filter(v => v).length;
+                const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+                document.getElementById('completed-count').textContent = completed;
+                document.getElementById('total-count').textContent = total;
+                document.getElementById('percentage').textContent = percentage + '%';
+                
+                const progressFill = document.getElementById('progress-fill');
+                progressFill.style.width = percentage + '%';
+                
+                const progressText = document.getElementById('progress-text');
+                if (percentage === 0) {
+                    progressText.textContent = 'GET STARTED!';
+                } else if (percentage < 25) {
+                    progressText.textContent = 'JUST BEGINNING! 加油!';
+                } else if (percentage < 50) {
+                    progressText.textContent = 'MAKING PROGRESS!';
+                } else if (percentage < 75) {
+                    progressText.textContent = 'HALFWAY THERE!';
+                } else if (percentage < 100) {
+                    progressText.textContent = 'ALMOST DONE!';
+                } else {
+                    progressText.textContent = 'CHINAMAXXED! 🎉';
+                }
+            }
+
+            getAllItems() {
+                const allItems = {};
+                for (let section of this.items) {
+                    if (section.type === 'section') {
+                        for (let subsection of section.subsections) {
+                            for (let item of subsection.items) {
+                                allItems[item.id] = item;
+                            }
+                        }
+                        for (let item of section.items) {
+                            allItems[item.id] = item;
+                        }
+                    }
+                }
+                return allItems;
+            }
+
+            toggleAll() {
+                const allItems = this.getAllItems();
+                const allChecked = Object.keys(allItems).every(id => this.checkedState[id] === true);
+                
+                for (let id in allItems) {
+                    this.checkedState[id] = !allChecked;
+                }
+                
+                this.saveState();
+                this.render();
+                this.updateStats();
+            }
+
+            resetAll() {
+                if (confirm('Are you sure you want to reset ALL progress? This cannot be undone!')) {
+                    this.checkedState = {};
+                    this.saveState();
+                    this.render();
+                    this.updateStats();
+                }
+            }
+
+            attachEventListeners() {
+                document.getElementById('toggle-all').addEventListener('click', () => this.toggleAll());
+                document.getElementById('reset-all').addEventListener('click', () => this.resetAll());
+            }
+        }
+
+        // Initialize the app
+        new ChecklistApp();
+    </script>
+</body>
+</html>
