@@ -238,12 +238,14 @@
         }
 
         .controls {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
             display: flex;
+            justify-content: center;
             gap: 10px;
-            z-index: 1000;
+            padding: 15px;
+            background: #000;
+            border-top: 6px solid #000;
+            position: relative;
+            z-index: 2;
         }
 
         .btn {
@@ -320,11 +322,11 @@
         <main id="checklist-content">
             <!-- Checklist will be dynamically generated here -->
         </main>
-    </div>
 
-    <div class="controls">
-        <button class="btn" id="toggle-all">Toggle All</button>
-        <button class="btn btn-danger" id="reset-all">Reset All</button>
+        <div class="controls">
+            <button class="btn" id="toggle-all">Toggle All</button>
+            <button class="btn btn-danger" id="reset-all">Reset All</button>
+        </div>
     </div>
 
     <script>
