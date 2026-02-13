@@ -7,7 +7,8 @@
     <title>CHINAMAXXING Checklist</title>
     <meta name="description"
         content="Track your journey to becoming a China expert with the Chinamaxxing Checklist. Master Mandarin, explore culture, understand politics, and more.">
-    <meta name="keywords" content="China, Mandarin, Learning, Checklist, Travel, Culture, Politics, HSK">
+    <meta name="keywords"
+        content="China, Mandarin, Learning, Checklist, Travel, Culture, Politics, HSK, Chinamaxxing, Becoming Chinese Checklist, China Survival Guide, Living in China Guide, Chinese Culture Checklist, Mandarin Learning Roadmap, China Expat Guide">
     <meta name="author" content="Chinamaxxing Checklist">
 
     <!-- Open Graph / Facebook -->
@@ -185,10 +186,10 @@
         .checklist-item {
             display: flex;
             align-items: flex-start;
-            margin: 3px 0;
-            padding: 5px 6px;
+            margin: 1px 0;
+            padding: 2px 6px;
             border: 1.5px solid transparent;
-            border-bottom: 1px dashed #C4B99A;
+            /* border-bottom: 1px dashed #C4B99A; Dotted line removed */
             background: transparent;
             cursor: pointer;
             position: relative;
@@ -251,23 +252,31 @@
 
         .item-link {
             font-family: 'Oswald', sans-serif;
-            font-size: 0.55rem;
+            font-size: 1.2rem;
             color: #BF1B2C;
             text-decoration: none;
-            font-weight: 700;
-            margin-left: 5px;
+            font-weight: 400;
+            margin-left: 8px;
             flex-shrink: 0;
-            border: 1.5px solid #BF1B2C;
-            padding: 0 3px;
-            line-height: 1.5;
+            border: none;
+            padding: 0;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .link-icon {
+            width: 1.2em;
+            height: auto;
             display: inline-block;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+            vertical-align: middle;
         }
 
         .item-link:hover {
-            background: #BF1B2C;
-            color: #F5D76E;
+            background: transparent;
+            color: #E8544A;
+            transform: scale(1.2);
         }
 
         .indent-1 {
@@ -349,7 +358,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>🇨🇳 CHINAMAXXING</h1>
+            <h1>中国 CHINAMAXXING</h1>
         </header>
 
         <div class="stats">
@@ -373,11 +382,11 @@
 
     <script>
         // Parse the markdown checklist
-        const markdownContent = `# 🇨🇳 CHINAMAXXING — Master TODO Checklist
+        const markdownContent = `# 中国 CHINAMAXXING — Master TODO Checklist
 
 -----
 
-## 1. 🗣️ Language (Mandarin Chinese)
+## 1. 语言 Language (Mandarin Chinese)
 
 ### Foundations
 
@@ -420,7 +429,7 @@
 
 -----
 
-## 2. 📱 Digital Ecosystem
+## 2. 数码 Digital Ecosystem
 
 ### Core Apps
 
@@ -452,7 +461,7 @@
 
 -----
 
-## 3. 🏯 Culture & Knowledge
+## 3. 文化 Culture & Knowledge
 
 ### History Overview
 
@@ -486,7 +495,7 @@
 
 -----
 
-## 4. 🏛️ Political System Understanding
+## 4. 政治 Political System Understanding
 
 ### Government Structure
 
@@ -527,7 +536,7 @@
 
 -----
 
-## 5. 🎬 Media Consumption
+## 5. 娱乐 Media Consumption
 
 ### TV & Film
 
@@ -565,7 +574,7 @@
 
 -----
 
-## 6. 🍜 Food & Cooking
+## 6. 美食 Food & Cooking
 
 ### The Eight Great Cuisines — Taste & Study
 
@@ -605,7 +614,7 @@
 
 -----
 
-## 7. 👔 Style & Grooming
+## 7. 时尚 Style & Grooming
 
 - [ ] Research current Chinese fashion trends (Douyin, RED)
   - [ ] Understand 国潮 (guochao) — national pride fashion trend
@@ -619,7 +628,7 @@
 
 -----
 
-## 8. ✈️ Travel & Living in China
+## 8. 旅行 Travel & Living in China
 
 ### Pre-Trip Logistics
 
@@ -657,7 +666,7 @@
 
 -----
 
-## 9. 🤝 Social & Networking
+## 9. 社交 Social & Networking
 
 - [ ] Find a language exchange partner (Tandem, HelloTalk)
 - [ ] Join a local Chinese cultural association or Mandarin meetup
@@ -670,7 +679,7 @@
 
 -----
 
-## 10. 🥋 Fitness & Wellness
+## 10. 健身 Fitness & Wellness
 
 ### Martial Arts & Movement
 
@@ -698,7 +707,7 @@
 
 -----
 
-## 11. 💰 Investment — China-Exposed Indexed Funds (Canada)
+## 11. 投资 Investment — China-Exposed Indexed Funds (Canada)
 
 ### Education & Setup
 
@@ -740,7 +749,7 @@
 
 -----
 
-## 12. 💼 Career & Business
+## 12. 商业 Career & Business
 
 - [ ] Learn Chinese business card exchange etiquette
   - [ ] Present and receive with both hands
@@ -757,7 +766,7 @@
 
 -----
 
-## 13. 🎲 Offbeat / Bucket List
+## 13. 挑战 Offbeat / Bucket List
 
 ### Experiences
 
@@ -1334,7 +1343,7 @@
                     link.href = itemLinks[item.id];
                     link.target = '_blank';
                     link.rel = 'noopener';
-                    link.textContent = '↗';
+                    link.innerHTML = `<img src="assets/cloud1.png" alt="link" class="link-icon">`;
                     link.addEventListener('click', (e) => e.stopPropagation());
                     itemEl.appendChild(link);
                 }
