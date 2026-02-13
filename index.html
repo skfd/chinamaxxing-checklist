@@ -1323,7 +1323,7 @@
 
                 const text = document.createElement('div');
                 text.className = 'item-text';
-                text.textContent = item.text;
+                text.innerHTML = this.formatText(item.text);
 
                 itemEl.appendChild(checkbox);
                 itemEl.appendChild(text);
@@ -1342,6 +1342,17 @@
                 itemEl.addEventListener('click', () => this.toggleItem(item.id));
 
                 return itemEl;
+            }
+
+            formatText(text) {
+                // Basic HTML escaping to prevent XSS (though content is static)
+                const escaped = text
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;");
+
+                // Parse bold markdown: **text** -> <strong>text</strong>
+                return escaped.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
             }
 
             toggleItem(id) {
