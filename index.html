@@ -996,12 +996,13 @@
             }
 
             createItem(item) {
+                const isChecked = this.checkedState[item.id] || false;
                 const itemEl = document.createElement('div');
-                itemEl.className = `checklist-item ${item.checked ? 'checked' : ''} ${item.indent > 0 ? 'indent-' + item.indent : ''}`;
+                itemEl.className = `checklist-item ${isChecked ? 'checked' : ''} ${item.indent > 0 ? 'indent-' + item.indent : ''}`;
                 itemEl.dataset.id = item.id;
 
                 const checkbox = document.createElement('div');
-                checkbox.className = `checkbox ${item.checked ? 'checked' : ''}`;
+                checkbox.className = `checkbox ${isChecked ? 'checked' : ''}`;
 
                 const text = document.createElement('div');
                 text.className = 'item-text';
