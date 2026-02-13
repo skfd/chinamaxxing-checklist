@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇨🇳 CHINAMAXXING Checklist</title>
+    <title>CHINAMAXXING Checklist</title>
+    <meta name="description"
+        content="Track your journey to becoming a China expert with the Chinamaxxing Checklist. Master Mandarin, explore culture, understand politics, and more.">
+    <meta name="keywords" content="China, Mandarin, Learning, Checklist, Travel, Culture, Politics, HSK">
+    <meta name="author" content="Chinamaxxing Checklist">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skfd.github.io/chinamaxxing-checklist/">
+    <meta property="og:title" content="🇨🇳 CHINAMAXXING Checklist">
+    <meta property="og:description"
+        content="Track your journey to becoming a China expert. Master Mandarin, explore culture, understand politics, and more.">
+    <meta property="og:image" content="https://skfd.github.io/chinamaxxing-checklist/assets/og-image.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://skfd.github.io/chinamaxxing-checklist/">
+    <meta property="twitter:title" content="🇨🇳 CHINAMAXXING Checklist">
+    <meta property="twitter:description"
+        content="Track your journey to becoming a China expert. Master Mandarin, explore culture, understand politics, and more.">
+    <meta property="twitter:image" content="https://skfd.github.io/chinamaxxing-checklist/assets/og-image.svg">
+
+    <link rel="canonical" href="https://skfd.github.io/chinamaxxing-checklist/">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇨🇳</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -26,7 +52,7 @@
             background: #F0E4CE;
             border: 3px solid #3A2A1A;
             position: relative;
-            box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
         }
 
         .container::before {
@@ -45,7 +71,7 @@
         header {
             background: #BF1B2C;
             border-bottom: 3px solid #3A2A1A;
-            padding: 25px 20px 20px;
+            padding: 15px 20px 12px;
             text-align: center;
             position: relative;
             z-index: 2;
@@ -54,17 +80,18 @@
         header::before {
             content: '★';
             display: block;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: #F5D76E;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
+            line-height: 1;
         }
 
         h1 {
             font-family: 'Oswald', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             color: #F5D76E;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 4px;
             font-weight: 700;
             margin: 0;
             line-height: 1;
@@ -318,6 +345,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -1206,7 +1234,7 @@
                     if (line.match(/^\s*- \[ \]/)) {
                         const indent = (line.match(/^\s+/) || [''])[0].length;
                         indentLevel = indent > 0 ? Math.floor(indent / 2) : 0;
-                        
+
                         const text = line.replace(/^\s*- \[ \]/, '').trim();
                         const item = {
                             type: 'item',
@@ -1353,11 +1381,11 @@
             toggleAll() {
                 const allItems = this.getAllItems();
                 const allChecked = Object.keys(allItems).every(id => this.checkedState[id] === true);
-                
+
                 for (let id in allItems) {
                     this.checkedState[id] = !allChecked;
                 }
-                
+
                 this.saveState();
                 this.render();
                 this.updateStats();
@@ -1382,4 +1410,5 @@
         new ChecklistApp();
     </script>
 </body>
+
 </html>

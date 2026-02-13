@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skfd.github.io/chinamaxxing-checklist/sitemap.xml
