@@ -12,29 +12,18 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
-            background: linear-gradient(45deg, #FF1744 0%, #F50057 25%, #D500F9 50%, #651FFF 75%, #2979FF 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-            padding: 20px;
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            background: #000;
+            padding: 10px;
             min-height: 100vh;
         }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border: 8px solid #000;
-            border-radius: 0;
-            box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.8);
+            background: #FFE81F;
+            border: 6px solid #000;
             position: relative;
-            overflow: hidden;
         }
 
         .container::before {
@@ -44,211 +33,156 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
-                radial-gradient(circle, #FF1744 2px, transparent 2px),
-                radial-gradient(circle, #2979FF 2px, transparent 2px);
-            background-size: 20px 20px;
-            background-position: 0 0, 10px 10px;
-            opacity: 0.05;
+            background-image:
+                radial-gradient(circle, rgba(0,0,0,0.15) 1px, transparent 1px),
+                radial-gradient(circle, rgba(0,0,0,0.15) 1px, transparent 1px);
+            background-size: 6px 6px;
+            background-position: 0 0, 3px 3px;
             pointer-events: none;
             z-index: 1;
         }
 
         header {
-            background: linear-gradient(135deg, #FFD600 0%, #FF6D00 100%);
+            background: #FF1744;
             border-bottom: 6px solid #000;
-            padding: 30px;
+            padding: 15px;
             text-align: center;
             position: relative;
             z-index: 2;
-            box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 3.5rem;
-            color: #000;
+            font-size: 2.5rem;
+            color: #FFE81F;
             text-transform: uppercase;
-            letter-spacing: 4px;
-            text-shadow: 
-                4px 4px 0 #FF1744,
-                8px 8px 0 #2979FF,
-                12px 12px 0 #00E676;
-            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-shadow:
+                3px 3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000;
             font-weight: 900;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #000;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin: 0;
         }
 
         .stats {
-            background: #FFD600;
-            border: 4px solid #000;
-            padding: 15px;
-            margin: 20px;
-            text-align: center;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+            background: #000;
+            color: #FFE81F;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-bottom: 6px solid #000;
             position: relative;
             z-index: 2;
-        }
-
-        .stats-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
         }
 
         .stat-item {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .stat-number {
-            font-size: 2.5rem;
+            font-size: 1.3rem;
             color: #FF1744;
-            text-shadow: 2px 2px 0 #fff;
-        }
-
-        .progress-bar {
-            background: #000;
-            height: 30px;
-            margin: 20px;
-            border: 4px solid #000;
-            position: relative;
-            overflow: hidden;
-            z-index: 2;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00E676, #FFD600, #FF1744);
-            transition: width 0.5s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #000;
-            font-size: 1rem;
         }
 
         main {
-            padding: 30px;
+            padding: 15px;
             position: relative;
             z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 15px;
         }
 
         .section {
-            margin-bottom: 40px;
-            border: 6px solid #000;
+            border: 5px solid #000;
             background: #fff;
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+            break-inside: avoid;
         }
 
         .section-header {
-            background: linear-gradient(135deg, #FF1744, #F50057);
-            padding: 20px;
-            border-bottom: 6px solid #000;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .section-header:hover {
-            transform: scale(1.02);
-        }
-
-        .section-header h2 {
-            font-size: 2rem;
-            color: #fff;
+            padding: 8px 12px;
+            border-bottom: 5px solid #000;
+            font-size: 0.95rem;
+            color: #000;
             text-transform: uppercase;
-            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
-            letter-spacing: 2px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
 
-        .section:nth-child(2n) .section-header {
-            background: linear-gradient(135deg, #2979FF, #651FFF);
-        }
-
-        .section:nth-child(3n) .section-header {
-            background: linear-gradient(135deg, #00E676, #00BFA5);
-        }
-
-        .section:nth-child(4n) .section-header {
-            background: linear-gradient(135deg, #FFD600, #FF6D00);
-        }
+        .section:nth-child(1) .section-header { background: #FF1744; color: #fff; }
+        .section:nth-child(2) .section-header { background: #2979FF; color: #fff; }
+        .section:nth-child(3) .section-header { background: #00E676; color: #000; }
+        .section:nth-child(4) .section-header { background: #FFD600; color: #000; }
+        .section:nth-child(5) .section-header { background: #F50057; color: #fff; }
+        .section:nth-child(6) .section-header { background: #651FFF; color: #fff; }
+        .section:nth-child(7) .section-header { background: #FF6D00; color: #fff; }
+        .section:nth-child(8) .section-header { background: #00BFA5; color: #000; }
+        .section:nth-child(9) .section-header { background: #D500F9; color: #fff; }
+        .section:nth-child(10) .section-header { background: #2979FF; color: #fff; }
+        .section:nth-child(11) .section-header { background: #FF1744; color: #fff; }
+        .section:nth-child(12) .section-header { background: #00E676; color: #000; }
+        .section:nth-child(13) .section-header { background: #FFD600; color: #000; }
 
         .section-content {
-            padding: 20px;
+            padding: 10px;
         }
 
         .subsection {
-            margin-bottom: 25px;
+            margin-bottom: 8px;
         }
 
         .subsection h3 {
-            font-size: 1.5rem;
+            font-size: 0.75rem;
             color: #000;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             text-transform: uppercase;
-            border-bottom: 4px solid #000;
-            padding-bottom: 8px;
-            display: inline-block;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 2px;
         }
 
         .checklist-item {
             display: flex;
             align-items: flex-start;
-            margin: 12px 0;
-            padding: 12px;
-            border: 3px solid #000;
+            margin: 4px 0;
+            padding: 5px 6px;
+            border: 2px solid #000;
             background: #fff;
-            transition: all 0.3s;
             cursor: pointer;
             position: relative;
+            transition: all 0.2s;
         }
 
         .checklist-item:hover {
-            transform: translateX(5px);
-            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            background: #FFE81F;
         }
 
         .checklist-item.checked {
-            background: linear-gradient(135deg, #FFD600 0%, #FFF59D 100%);
-            text-decoration: line-through;
-            opacity: 0.7;
+            background: #FFD600;
+            opacity: 0.6;
         }
 
-        .checklist-item.checked::after {
-            content: '✓';
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            color: #00E676;
-            text-shadow: 2px 2px 0 #000;
-            font-weight: bold;
+        .checklist-item.checked .item-text {
+            text-decoration: line-through;
         }
 
         .checkbox {
-            width: 30px;
-            height: 30px;
-            border: 4px solid #000;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #000;
             background: #fff;
-            margin-right: 15px;
+            margin-right: 8px;
             flex-shrink: 0;
             cursor: pointer;
             position: relative;
-            transition: all 0.3s;
-        }
-
-        .checkbox:hover {
-            background: #FFD600;
         }
 
         .checkbox.checked {
@@ -262,58 +196,52 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 0.75rem;
             font-weight: bold;
+            line-height: 1;
         }
 
         .item-text {
             flex: 1;
-            font-size: 1.1rem;
+            font-size: 0.7rem;
             color: #000;
-            line-height: 1.6;
+            line-height: 1.3;
             font-weight: 600;
+            font-family: Arial, sans-serif;
         }
 
         .indent-1 {
-            margin-left: 30px;
+            margin-left: 20px;
         }
 
         .indent-2 {
-            margin-left: 60px;
+            margin-left: 40px;
         }
 
         .controls {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 15px;
+            right: 15px;
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            gap: 10px;
             z-index: 1000;
         }
 
         .btn {
-            padding: 15px 25px;
-            font-size: 1.1rem;
-            font-weight: bold;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+            font-weight: 900;
             text-transform: uppercase;
-            border: 4px solid #000;
-            background: #FFD600;
+            border: 3px solid #000;
+            background: #FFE81F;
             cursor: pointer;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
-            transition: all 0.2s;
             color: #000;
-            font-family: 'Comic Sans MS', sans-serif;
+            font-family: 'Arial Black', sans-serif;
+            transition: all 0.2s;
         }
 
         .btn:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.4);
-        }
-
-        .btn:active {
-            transform: translate(2px, 2px);
-            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+            background: #FFD600;
         }
 
         .btn-danger {
@@ -321,60 +249,37 @@
             color: #fff;
         }
 
-        hr {
-            border: none;
-            border-top: 4px solid #000;
-            margin: 30px 0;
+        .btn-danger:hover {
+            background: #C5003E;
         }
 
         blockquote {
-            background: linear-gradient(135deg, #2979FF, #651FFF);
-            border-left: 8px solid #000;
-            padding: 20px;
-            margin: 30px 0;
-            font-size: 1.3rem;
+            background: #000;
+            border: 4px solid #000;
+            padding: 12px;
+            margin: 15px 0 0 0;
+            font-size: 0.85rem;
             font-weight: bold;
-            color: #fff;
-            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+            color: #FFE81F;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            grid-column: 1 / -1;
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-                text-shadow: 
-                    2px 2px 0 #FF1744,
-                    4px 4px 0 #2979FF,
-                    6px 6px 0 #00E676;
+            main {
+                grid-template-columns: 1fr;
             }
 
-            .container {
-                border: 4px solid #000;
+            h1 {
+                font-size: 1.8rem;
             }
 
             .controls {
-                bottom: 15px;
-                right: 15px;
+                bottom: 10px;
+                right: 10px;
             }
-
-            .btn {
-                padding: 12px 20px;
-                font-size: 0.9rem;
-            }
-        }
-
-        .collapse-icon {
-            float: right;
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-        }
-
-        .section.collapsed .collapse-icon {
-            transform: rotate(-90deg);
-        }
-
-        .section.collapsed .section-content {
-            display: none;
         }
     </style>
 </head>
@@ -382,29 +287,14 @@
     <div class="container">
         <header>
             <h1>🇨🇳 CHINAMAXXING</h1>
-            <div class="subtitle">Master TODO Checklist</div>
         </header>
 
         <div class="stats">
-            <div class="stats-content">
-                <div class="stat-item">
-                    <div class="stat-number" id="completed-count">0</div>
-                    <div>Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="total-count">0</div>
-                    <div>Total Items</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="percentage">0%</div>
-                    <div>Progress</div>
-                </div>
+            <div class="stat-item">
+                <span id="completed-count">0</span>/<span id="total-count">0</span> COMPLETE
             </div>
-        </div>
-
-        <div class="progress-bar">
-            <div class="progress-fill" id="progress-fill" style="width: 0%">
-                <span id="progress-text">GET STARTED!</span>
+            <div class="stat-item">
+                <span class="stat-number" id="percentage">0%</span>
             </div>
         </div>
 
@@ -964,10 +854,7 @@
 
                 const header = document.createElement('div');
                 header.className = 'section-header';
-                header.innerHTML = `<h2>${section.title} <span class="collapse-icon">▼</span></h2>`;
-                header.addEventListener('click', () => {
-                    sectionEl.classList.toggle('collapsed');
-                });
+                header.innerHTML = `${section.title}`;
 
                 const content = document.createElement('div');
                 content.className = 'section-content';
@@ -977,11 +864,11 @@
                     const subsectionEl = document.createElement('div');
                     subsectionEl.className = 'subsection';
                     subsectionEl.innerHTML = `<h3>${subsection.title}</h3>`;
-                    
+
                     for (let item of subsection.items) {
                         subsectionEl.appendChild(this.createItem(item));
                     }
-                    
+
                     content.appendChild(subsectionEl);
                 }
 
@@ -1031,24 +918,6 @@
                 document.getElementById('completed-count').textContent = completed;
                 document.getElementById('total-count').textContent = total;
                 document.getElementById('percentage').textContent = percentage + '%';
-                
-                const progressFill = document.getElementById('progress-fill');
-                progressFill.style.width = percentage + '%';
-                
-                const progressText = document.getElementById('progress-text');
-                if (percentage === 0) {
-                    progressText.textContent = 'GET STARTED!';
-                } else if (percentage < 25) {
-                    progressText.textContent = 'JUST BEGINNING! 加油!';
-                } else if (percentage < 50) {
-                    progressText.textContent = 'MAKING PROGRESS!';
-                } else if (percentage < 75) {
-                    progressText.textContent = 'HALFWAY THERE!';
-                } else if (percentage < 100) {
-                    progressText.textContent = 'ALMOST DONE!';
-                } else {
-                    progressText.textContent = 'CHINAMAXXED! 🎉';
-                }
             }
 
             getAllItems() {
