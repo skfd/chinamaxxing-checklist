@@ -157,7 +157,7 @@ main {
     background: transparent;
     cursor: pointer;
     position: relative;
-    transition: all 0.15s;
+    transition: all 0.3s ease-out;
 }
 
 .checklist-item:last-child {
@@ -167,6 +167,9 @@ main {
 .checklist-item:hover {
     background: rgba(191, 27, 44, 0.06);
     border-color: #BF1B2C;
+    transform: translateX(6px);
+    box-shadow: -2px 2px 5px rgba(58, 42, 26, 0.1);
+    transition: all 0s;
 }
 
 .checklist-item.checked {
@@ -189,6 +192,13 @@ main {
     flex-shrink: 0;
     cursor: pointer;
     position: relative;
+    transition: all 0.2s ease-out;
+}
+
+.checklist-item:hover .checkbox {
+    border-color: #BF1B2C;
+    transform: scale(1.1);
+    transition: all 0s;
 }
 
 .checkbox.checked {
@@ -227,7 +237,7 @@ main {
     line-height: 1;
     display: inline-flex;
     align-items: center;
-    transition: transform 0.2s;
+    transition: all 0.2s ease-out;
 }
 
 .link-icon {
@@ -240,7 +250,9 @@ main {
 .item-link:hover {
     background: transparent;
     color: #E8544A;
-    transform: scale(1.2);
+    transform: scale(1.15);
+    text-shadow: 0 0 8px rgba(232, 84, 74, 0.4);
+    transition: all 0s;
 }
 
 .indent-1 {
@@ -273,12 +285,24 @@ main {
     background: transparent;
     cursor: pointer;
     color: #F5D76E;
-    transition: all 0.2s;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 4px 0 #3A2A1A;
+    position: relative;
+    top: 0;
 }
 
 .btn:hover {
     background: #F5D76E;
     color: #3A2A1A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #3A2A1A;
+    transition: all 0s;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #3A2A1A;
+    transition: all 0s;
 }
 
 .btn-danger {
