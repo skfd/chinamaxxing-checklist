@@ -38,6 +38,7 @@ class ChecklistApp {
         this.render();
         this.attachEventListeners();
         this.updateStats();
+        this.checkForUrlState();
     }
 
     formatText(text) {
@@ -253,6 +254,117 @@ class ChecklistApp {
     attachEventListeners() {
         document.getElementById('toggle-all').addEventListener('click', () => this.toggleAll());
         document.getElementById('reset-all').addEventListener('click', () => this.resetAll());
+        document.getElementById('btn-bookmark').addEventListener('click', () => this.updateUrlWithState());
+        document.getElementById('btn-share').addEventListener('click', () => this.copyShareLink());
+    }
+
+    // --- State Serialization ---
+
+    serializeState() {
+        // Get all checked IDs
+        const checkedIds = Object.keys(this.state.checked).filter(id => this.state.checked[id]);
+        if (checkedIds.length === 0) return '';
+
+        // Simple compression: just join with comma and base64 encode
+        // For a more robust solution, we might map IDs to integers if the list is static,
+        // but current IDs are strings. Base64 of JSON array is easiest.
+        const json = JSON.stringify(checkedIds);
+        return btoa(json);
+    }
+
+    deserializeState(encoded) {
+        try {
+            const json = atob(encoded);
+            const ids = JSON.parse(json);
+            if (Array.isArray(ids)) {
+                const checked = {};
+                ids.forEach(id => checked[id] = true);
+                return {
+                    version: this.data.version,
+                    checked: checked
+                };
+            }
+        } catch (e) {
+            console.error("Failed to parse state from URL", e);
+        }
+        return null;
+    }
+
+    // --- Bookmark / Share Logic ---
+
+    checkForUrlState() {
+        const params = new URLSearchParams(window.location.search);
+        const stateStr = params.get('state');
+
+        if (stateStr) {
+            const loadedState = this.deserializeState(stateStr);
+            if (loadedState) {
+                // If URL state exists, we load it. 
+                // Decision: DO NOT save to localStorage immediately.
+                // Just viewing a shared list shouldn't overwrite your personal progress.
+                // However, this.state IS the source of truth for rendering.
+
+                // If we want to support "Viewing Shared List" mode separate from "My List",
+                // we'd need UI to indicate that.
+                // For simplicity/MVP: We load it into this.state. 
+                // AND we save it? If we don't save it, reloading the page (without query param) reverts to old local state.
+                // If we do save it, we overwrite local state.
+
+                // Compromise: Load it, but `saveState` updates localStorage.
+                // If the user *interacts* (checks/unchecks), `saveState` is called, and it becomes their new local state.
+                // This feels natural: "I opened this list. I start working on it. It becomes mine."
+                this.state = loadedState;
+                this.render();
+                this.updateStats();
+
+                // Clean URL? No, keep it so they know they are viewing a specific state.
+                // actually, let's toast that we loaded it.
+                this.showToast("Loaded checklist from link");
+            }
+        }
+    }
+
+    updateUrlWithState() {
+        const encoded = this.serializeState();
+        const newUrl = new URL(window.location.href);
+        if (encoded) {
+            newUrl.searchParams.set('state', encoded);
+        } else {
+            newUrl.searchParams.delete('state');
+        }
+
+        window.history.pushState({ path: newUrl.href }, '', newUrl.href);
+        this.showToast("URL updated with current progress");
+    }
+
+    copyShareLink() {
+        const encoded = this.serializeState();
+        const newUrl = new URL(window.location.href);
+        if (encoded) {
+            newUrl.searchParams.set('state', encoded);
+        } else {
+            newUrl.searchParams.delete('state');
+        }
+
+        navigator.clipboard.writeText(newUrl.href).then(() => {
+            this.showToast("Link copied to clipboard!");
+        }, (err) => {
+            console.error('Could not copy text: ', err);
+            this.showToast("Failed to copy link");
+        });
+    }
+
+    showToast(message) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.remove('hidden');
+
+        // Reset animation/timeout
+        if (this.toastTimeout) clearTimeout(this.toastTimeout);
+
+        this.toastTimeout = setTimeout(() => {
+            toast.classList.add('hidden');
+        }, 3000);
     }
 }
 

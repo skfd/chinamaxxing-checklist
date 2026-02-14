@@ -43,6 +43,10 @@
     <div class="container">
         <header>
             <h1>中国 CHINAMAXXING</h1>
+            <div class="header-controls">
+                <button class="btn btn-sm" id="btn-bookmark" title="Update URL with current state">Bookmark</button>
+                <button class="btn btn-sm" id="btn-share" title="Copy link to clipboard">Share you progress</button>
+            </div>
         </header>
 
         <div class="stats">
@@ -60,8 +64,11 @@
 
         <div class="controls">
             <button class="btn" id="toggle-all">Toggle All</button>
+            <!-- Bookmark/Share moved to header -->
             <button class="btn btn-danger" id="reset-all">Reset All</button>
         </div>
+
+        <div id="toast" class="toast hidden">Link copied to clipboard!</div>
     </div>
 
     <!-- Application Logic -->

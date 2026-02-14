@@ -42,6 +42,21 @@ header {
     z-index: 2;
 }
 
+.header-controls {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
 header::before {
     content: '★';
     display: block;
@@ -313,6 +328,30 @@ main {
 .btn-danger:hover {
     background: #E8544A;
     color: #F0E4CE;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3A2A1A;
+    color: #F5D76E;
+    padding: 12px 24px;
+    border: 2px solid #F5D76E;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
 }
 
 blockquote {
