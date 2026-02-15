@@ -256,6 +256,7 @@ class ChecklistApp {
         document.getElementById('reset-all').addEventListener('click', () => this.resetAll());
         document.getElementById('btn-bookmark').addEventListener('click', () => this.updateUrlWithState());
         document.getElementById('btn-share').addEventListener('click', () => this.copyShareLink());
+        document.getElementById('btn-print').addEventListener('click', () => this.openPrintPage());
     }
 
     // --- State Serialization ---
@@ -365,6 +366,10 @@ class ChecklistApp {
         this.toastTimeout = setTimeout(() => {
             toast.classList.add('hidden');
         }, 3000);
+    }
+
+    openPrintPage() {
+        window.open('print.html', '_blank');
     }
 }
 
