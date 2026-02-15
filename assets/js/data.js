@@ -1334,7 +1334,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "15. 投资 Investment — China-Exposed Indexed Funds (Canada)",
+      "title": "15. 投资 Investment — Education & ETFs",
       "items": [
         {
           "title": "Education & Setup",
@@ -1419,7 +1419,12 @@ export const checklistData = {
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "16. 投资 Investment — Risks & Action",
+      "items": [
         {
           "title": "Risk Awareness",
           "items": [
@@ -1475,7 +1480,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "16. 商业 Career & Business",
+      "title": "17. 商业 Career & Business",
       "items": [
         {
           "id": "learn-chinese-business-card-exchange-etiquette",
@@ -1536,7 +1541,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "17. 📡 Electronics & Tech Stack",
+      "title": "18. 📡 Electronics & Tech Stack",
       "items": [
         {
           "title": "Phone & Wearables",
@@ -1694,7 +1699,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "18. 🤖 AI Tools & Models",
+      "title": "19. 🤖 AI Chatbots & LLMs",
       "items": [
         {
           "title": "Chatbots & LLMs",
@@ -1796,7 +1801,12 @@ export const checklistData = {
               "link": "https://en.wikipedia.org/wiki/Baidu_Maps"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "20. 🤖 AI Creative & Developer Tools",
+      "items": [
         {
           "title": "AI Image Generation",
           "items": [
@@ -1983,7 +1993,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "19. 挑战 Offbeat / Bucket List",
+      "title": "21. 挑战 Offbeat / Bucket List",
       "items": [
         {
           "title": "Experiences",
