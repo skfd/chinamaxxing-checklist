@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 1;
+export const DATA_VERSION = 2;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -1823,6 +1823,21 @@ export const checklistData = {
               "id": "explore-iflytek-spark-strong-at-chinese-voice-tasks",
               "text": "Explore **iFlytek Spark** (讯飞星火) — strong at Chinese voice tasks",
               "link": "https://en.wikipedia.org/wiki/Baidu_Maps"
+            },
+            {
+              "id": "try-minimax-hailuo-ai-multimodal-with-voice-and-video",
+              "text": "Try **MiniMax** (海螺AI) — multimodal with voice and video generation",
+              "link": "https://www.minimaxi.com/",
+              "items": [
+                {
+                  "id": "test-minimax-video-generation-capabilities",
+                  "text": "Test video generation capabilities"
+                },
+                {
+                  "id": "try-minimax-voice-synthesis-and-music-generation",
+                  "text": "Try voice synthesis and music generation"
+                }
+              ]
             }
           ]
         }
