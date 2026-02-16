@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 2;
+export const DATA_VERSION = 3;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -1052,7 +1052,7 @@ export const checklistData = {
             {
               "id": "explore-li-ning",
               "text": "Li-Ning",
-              "link": "https://en.wikipedia.org/wiki/Li-Ning_(company)"
+              "link": "https://en.wikipedia.org/wiki/Li-Ning"
             },
             {
               "id": "explore-anta",
@@ -1067,7 +1067,12 @@ export const checklistData = {
             {
               "id": "explore-jnby",
               "text": "JNBY",
-              "link": "https://en.wikipedia.org/wiki/JNBY"
+              "link": "https://www.nytimes.com/2010/06/24/fashion/24CRITIC.html"
+            },
+            {
+              "id": "explore-peak",
+              "text": "Peak",
+              "link": "https://www.peaksportshoes.com/"
             }
           ]
         },
