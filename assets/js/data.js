@@ -2165,10 +2165,6 @@ export const checklistData = {
               "text": "Have a full WeChat Moments feed that looks legit Chinese"
             }
           ]
-        },
-        {
-          "type": "blockquote",
-          "text": "**Remember:** Chinamaxxing is a marathon, not a sprint. 加油! (jiā yóu — keep going!) 🐉"
         }
       ]
     }
