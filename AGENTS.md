@@ -146,7 +146,7 @@ No CI/CD - changes are live immediately after push.
 
 * Make sure there are no duplicates things
 * Do not List things in brackets prefere listing things as separate checkboxes
-* add links, try to find some article not just wikipedia pages.
+* Add links, try to find some article not just wikipedia pages.
 
 ## Things NOT to Do
 
