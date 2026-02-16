@@ -142,6 +142,12 @@ Static hosting on GitHub Pages. Push to `main` branch to deploy.
 
 No CI/CD - changes are live immediately after push.
 
+## Content rules
+
+* Make sure there are no duplicates things
+* Do not List things in brackets prefere listing things as separate checkboxes
+* add links, try to find some article not just wikipedia pages.
+
 ## Things NOT to Do
 
 - Don't add build tools (webpack, vite, etc.)
