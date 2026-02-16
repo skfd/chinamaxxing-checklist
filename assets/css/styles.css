@@ -196,7 +196,7 @@ main {
     border-bottom: none;
 }
 
-.checklist-item:hover {
+.checklist-item:hover:not(:has(.checklist-item:hover)) {
     background: rgba(191, 27, 44, 0.06);
     border-color: #BF1B2C;
     transform: translateX(6px);
@@ -227,7 +227,7 @@ main {
     transition: all 0.2s ease-out;
 }
 
-.checklist-item:hover .checkbox {
+.checklist-item:hover:not(:has(.checklist-item:hover)) .checkbox {
     border-color: #BF1B2C;
     transform: scale(1.1);
     transition: all 0s;
