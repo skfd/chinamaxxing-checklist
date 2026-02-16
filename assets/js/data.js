@@ -1043,9 +1043,30 @@ export const checklistData = {
           ]
         },
         {
-          "id": "explore-chinese-fashion-brands-li-ning-anta-bosideng-jnby",
-          "text": "Explore Chinese fashion brands (Li-Ning, Anta, Bosideng, JNBY)",
-          "link": "https://en.wikipedia.org/wiki/Li-Ning_(company)"
+          "id": "explore-chinese-fashion-brands",
+          "text": "Explore Chinese fashion brands",
+          "items": [
+            {
+              "id": "explore-li-ning",
+              "text": "Li-Ning",
+              "link": "https://en.wikipedia.org/wiki/Li-Ning_(company)"
+            },
+            {
+              "id": "explore-anta",
+              "text": "Anta",
+              "link": "https://en.wikipedia.org/wiki/Anta_Sports"
+            },
+            {
+              "id": "explore-bosideng",
+              "text": "Bosideng",
+              "link": "https://en.wikipedia.org/wiki/Bosideng"
+            },
+            {
+              "id": "explore-jnby",
+              "text": "JNBY",
+              "link": "https://en.wikipedia.org/wiki/JNBY"
+            }
+          ]
         },
         {
           "id": "adopt-a-multi-step-skincare-routine",
