@@ -1,5 +1,8 @@
+export const CODE_VERSION = 2;
+export const DATA_VERSION = 1;
+
 export const checklistData = {
-  "version": 1,
+  "version": DATA_VERSION,
   "items": [
     {
       "title": "1. 语言 Language (Mandarin Chinese)",
