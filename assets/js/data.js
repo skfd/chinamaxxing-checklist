@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 4;
+export const DATA_VERSION = 5;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -2215,6 +2215,218 @@ export const checklistData = {
             {
               "id": "have-a-full-wechat-moments-feed-that-looks-legit-chinese",
               "text": "Have a full WeChat Moments feed that looks legit Chinese"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "22. 🏆 文化奖项 Cultural Awards to Follow",
+      "items": [
+        {
+          "title": "Film Awards — Establishment",
+          "items": [
+            {
+              "id": "follow-golden-rooster-awards-mainland-china-s-top-film-honor",
+              "text": "**Golden Rooster Awards** (金鸡奖) — Mainland China's top film honor",
+              "link": "https://en.wikipedia.org/wiki/Golden_Rooster_Awards",
+              "items": [
+                {
+                  "id": "watch-a-golden-rooster-best-picture-winner",
+                  "text": "Watch a Golden Rooster Best Picture winner"
+                }
+              ]
+            },
+            {
+              "id": "follow-hong-kong-film-awards-hk-s-oscar-equivalent",
+              "text": "**Hong Kong Film Awards** (香港电影金像奖) — HK's Oscar equivalent",
+              "link": "https://en.wikipedia.org/wiki/Hong_Kong_Film_Awards",
+              "items": [
+                {
+                  "id": "watch-a-hkfa-best-film-winner-from-recent-years",
+                  "text": "Watch a HKFA Best Film winner from recent years"
+                }
+              ]
+            },
+            {
+              "id": "follow-golden-horse-awards-taiwan-s-prestigious-chinese-language-cinema-award",
+              "text": "**Golden Horse Awards** (金马奖) — Taiwan's prestigious Chinese-language cinema award",
+              "link": "https://en.wikipedia.org/wiki/Golden_Horse_Awards",
+              "items": [
+                {
+                  "id": "watch-a-golden-horse-best-feature-winner",
+                  "text": "Watch a Golden Horse Best Feature winner"
+                }
+              ]
+            },
+            {
+              "id": "know-the-huabiao-awards-government-excellence-award",
+              "text": "**Huabiao Awards** (华表奖) — government excellence award",
+              "link": "https://en.wikipedia.org/wiki/Huabiao_Awards"
+            },
+            {
+              "id": "know-the-hundred-flowers-awards-audience-voted-popularity",
+              "text": "**Hundred Flowers Awards** (百花奖) — audience-voted popularity",
+              "link": "https://en.wikipedia.org/wiki/Hundred_Flowers_Awards"
+            }
+          ]
+        },
+        {
+          "title": "Film Awards — Indie & Hipster",
+          "items": [
+            {
+              "id": "follow-first-international-film-festival-xining-indie-arthouse-breakthroughs",
+              "text": "**FIRST International Film Festival** (西宁FIRST青年电影展) — indie/arthouse breakthroughs",
+              "link": "https://en.wikipedia.org/wiki/FIRST_International_Film_Festival",
+              "items": [
+                {
+                  "id": "watch-a-first-festival-award-winner-or-nominee",
+                  "text": "Watch a FIRST Festival award winner or nominee"
+                }
+              ]
+            },
+            {
+              "id": "follow-pingyao-international-film-festival-jia-zhangke-s-indie-showcase",
+              "text": "**Pingyao International Film Festival** (平遥国际电影展) — Jia Zhangke's indie showcase",
+              "link": "https://en.wikipedia.org/wiki/Pingyao_International_Film_Festival"
+            },
+            {
+              "id": "follow-beijing-international-film-festival-tiantan-awards",
+              "text": "**Beijing International Film Festival** (北京国际电影节) — Tiantan Awards",
+              "link": "https://en.wikipedia.org/wiki/Beijing_International_Film_Festival"
+            },
+            {
+              "id": "follow-shanghai-international-film-festival-golden-goblet-awards",
+              "text": "**Shanghai International Film Festival** (上海国际电影节) — Golden Goblet Awards",
+              "link": "https://en.wikipedia.org/wiki/Shanghai_International_Film_Festival",
+              "items": [
+                {
+                  "id": "watch-a-golden-goblet-best-film-winner",
+                  "text": "Watch a Golden Goblet Best Film winner"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Music Awards — Establishment",
+          "items": [
+            {
+              "id": "follow-golden-melody-awards-taiwan-s-grammy-for-mandopop",
+              "text": "**Golden Melody Awards** (金曲奖) — Taiwan's Grammy for Mandopop",
+              "link": "https://en.wikipedia.org/wiki/Golden_Melody_Awards",
+              "items": [
+                {
+                  "id": "listen-to-a-gma-album-of-the-year-winner",
+                  "text": "Listen to a GMA Album of the Year winner"
+                },
+                {
+                  "id": "watch-the-golden-melody-awards-ceremony-live-or-highlights",
+                  "text": "Watch the Golden Melody Awards ceremony (live or highlights)"
+                }
+              ]
+            },
+            {
+              "id": "follow-migu-music-awards-major-mainland-pop-awards",
+              "text": "**Migu Music Awards** (咪咕音乐盛典) — major mainland pop awards",
+              "link": "https://en.wikipedia.org/wiki/Music_of_China#Awards"
+            },
+            {
+              "id": "follow-music-radio-china-top-charts-mainstream-radio-airplay",
+              "text": "**Music Radio China Top Charts** (MusicRadio中国TOP排行榜) — mainstream radio airplay"
+            }
+          ]
+        },
+        {
+          "title": "Music Awards — Indie & Alternative",
+          "items": [
+            {
+              "id": "follow-abbey-road-sessions-china-indie-showcase",
+              "text": "**Abbey Road Sessions China** — indie showcase series"
+            },
+            {
+              "id": "follow-can-you-hear-the-music-underground-scene",
+              "text": "**Can You Hear The Music** (你能听到吗) — underground scene recognition"
+            },
+            {
+              "id": "follow-the-beijing-pop-music-festival-awards",
+              "text": "**Beijing Pop Music Festival** — indie and alternative recognition"
+            },
+            {
+              "id": "know-the-independent-music-scene-chinese-indie-artists-to-follow",
+              "text": "Know the independent music scene — follow Chinese indie labels like Maybe Mars (兵马司),Sleeping (睡着的)"
+            }
+          ]
+        },
+        {
+          "title": "Theater & Performing Arts",
+          "items": [
+            {
+              "id": "know-the-plum-blossom-awards-top-chinese-theater-honor",
+              "text": "**Plum Blossom Awards** (梅花奖) — top Chinese theater honor",
+              "link": "https://en.wikipedia.org/wiki/Plum_Blossom_Award"
+            },
+            {
+              "id": "follow-wenhua-awards-national-theater-excellence",
+              "text": "**Wenhua Awards** (文华奖) — national theater excellence"
+            },
+            {
+              "id": "know-the-china-drama-festival",
+              "text": "**China Drama Festival** (中国戏剧节) — national theater festival"
+            },
+            {
+              "id": "follow-shanghai-theatre-academy-productions",
+              "text": "**Shanghai Theatre Academy** (上海戏剧学院) productions"
+            }
+          ]
+        },
+        {
+          "title": "Literature Awards",
+          "items": [
+            {
+              "id": "know-the-mao-dun-literature-prize-china-s-most-prestigious-fiction-award",
+              "text": "**Mao Dun Literature Prize** (茅盾文学奖) — China's most prestigious fiction award",
+              "link": "https://en.wikipedia.org/wiki/Mao_Dun_Literature_Prize",
+              "items": [
+                {
+                  "id": "read-a-mao-dun-prize-winner",
+                  "text": "Read a Mao Dun Prize winner"
+                }
+              ]
+            },
+            {
+              "id": "know-the-lu-xun-literary-prize",
+              "text": "**Lu Xun Literary Prize** (鲁迅文学奖) — mid-length fiction, essays, poetry",
+              "link": "https://en.wikipedia.org/wiki/Lu_Xun_Literary_Prize"
+            },
+            {
+              "id": "know-the-lao-she-literature-prize-beijing-focused",
+              "text": "**Lao She Literature Prize** (老舍文学奖) — Beijing-focused",
+              "link": "https://en.wikipedia.org/wiki/Lao_She_Literature_Prize"
+            },
+            {
+              "id": "follow-the-chengdu-biennale-literary-awards",
+              "text": "**Chengdu Biennale Literary Awards** — emerging voices"
+            }
+          ]
+        },
+        {
+          "title": "Art & Design Awards",
+          "items": [
+            {
+              "id": "know-red-star-design-awards-china-s-top-industrial-design",
+              "text": "**Red Star Design Awards** (红星奖) — China's top industrial design",
+              "link": "https://en.wikipedia.org/wiki/Red_Star_Design_Award"
+            },
+            {
+              "id": "follow-chinese-artists-at-venice-biennale-golden-lion-winners",
+              "text": "**Venice Biennale Golden Lion** — track Chinese artists winning internationally",
+              "link": "https://en.wikipedia.org/wiki/Venice_Biennale"
+            },
+            {
+              "id": "follow-the-contemporary-art-scene-art-basel-hong-kong",
+              "text": "**Art Basel Hong Kong** — major contemporary art fair",
+              "link": "https://en.wikipedia.org/wiki/Art_Basel"
             }
           ]
         }

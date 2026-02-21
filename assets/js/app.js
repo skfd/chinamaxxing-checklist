@@ -1,4 +1,4 @@
-import { checklistData } from './data.js';
+import { checklistData, CODE_VERSION, DATA_VERSION } from './data.js';
 
 class ChecklistApp {
     constructor() {
@@ -27,6 +27,11 @@ class ChecklistApp {
     }
 
     init() {
+        const versionLink = document.querySelector('.version-link');
+        if (versionLink) {
+            versionLink.textContent = `data v${DATA_VERSION}, code v${CODE_VERSION}`;
+        }
+
         // Version check / Future Migration logic
         if (this.state.version < this.data.version) {
             console.log("Migration needed (future implementation)");
