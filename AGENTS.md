@@ -147,6 +147,7 @@ No CI/CD - changes are live immediately after push.
 * Make sure there are no duplicates things
 * Do not List things in brackets prefere listing things as separate checkboxes
 * Add links, try to find some article not just wikipedia pages.
+* "Offbeat / Bucket List" should always be a last section.
 
 ## Things NOT to Do
 
@@ -155,4 +156,4 @@ No CI/CD - changes are live immediately after push.
 - Don't change item IDs casually (breaks user data)
 - Don't add heavy JavaScript libraries
 - Don't modify the HOMM3 aesthetic without good reason
-- Don't use emojis in Powershell code (they're fine in checklist content)
+- Don't use emojis

@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 5;
+export const DATA_VERSION = 6;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -2069,7 +2069,145 @@ export const checklistData = {
       ]
     },
     {
-      "title": "21. 挑战 Offbeat / Bucket List",
+      "title": "21. 🧸 Viral Products & Collectibles",
+      "items": [
+        {
+          "title": "Art Toys & Blind Boxes",
+          "items": [
+            {
+              "id": "discover-labubu-kasing-lung-s-mischievous-character",
+              "text": "Discover **Labubu** (拉布布) — Kasing Lung's mischievous character",
+              "link": "https://www.popmart.com/",
+              "items": [
+                {
+                  "id": "own-a-labubu-figure-or-plush",
+                  "text": "Own a Labubu figure or plush"
+                },
+                {
+                  "id": "learn-about-the-artist-kasing-lung",
+                  "text": "Learn about the artist Kasing Lung (龙家升)"
+                }
+              ]
+            },
+            {
+              "id": "explore-pop-mart-china-s-blind-box-empire",
+              "text": "Explore **Pop Mart** (泡泡玛特) — China's blind box empire",
+              "link": "https://en.wikipedia.org/wiki/Pop_Mart",
+              "items": [
+                {
+                  "id": "collect-a-molly-figure-kenny-wong-s-iconic-character",
+                  "text": "Collect a **Molly** figure — Kenny Wong's iconic character"
+                },
+                {
+                  "id": "discover-dimoo-ayan-deng-s-dreamlike-figures",
+                  "text": "Discover **Dimoo** — Ayan Deng's dreamlike figures"
+                },
+                {
+                  "id": "check-out-skullpanda-quirky-edgy-design",
+                  "text": "Check out **Skullpanda** — quirky, edgy design"
+                },
+                {
+                  "id": "try-crybaby-molly-s-tearful-character",
+                  "text": "Try **Crybaby** — tearful character design"
+                },
+                {
+                  "id": "discover-hirono-lonely-melancholic-aesthetic",
+                  "text": "Discover **Hirono** — lonely, melancholic aesthetic"
+                }
+              ]
+            },
+            {
+              "id": "open-your-first-blind-box-experience-the-thrill",
+              "text": "Open your first blind box — experience the thrill"
+            },
+            {
+              "id": "learn-about-the-secondary-market-for-rare-figures",
+              "text": "Learn about the secondary market for rare figures (闲鱼 Xianyu)"
+            }
+          ]
+        },
+        {
+          "title": "Viral Brands & Trends",
+          "items": [
+            {
+              "id": "try-heytea-china-s-premium-cheese-tea-brand",
+              "text": "Try **Heytea** (喜茶) — China's premium cheese tea brand",
+              "link": "https://en.wikipedia.org/wiki/Heytea"
+            },
+            {
+              "id": "visit-mixue-ice-cream-tea-s-viral-budget-chain",
+              "text": "Visit **Mixue** (蜜雪冰城) — viral budget ice cream & tea chain",
+              "link": "https://en.wikipedia.org/wiki/Mixue",
+              "items": [
+                {
+                  "id": "learn-the-mixue-theme-song-mixue-bingcheng-tianmi-mi",
+                  "text": "Learn the Mixue theme song (蜜雪冰城甜蜜蜜)"
+                }
+              ]
+            },
+            {
+              "id": "order-from-luckin-coffee-china-s-starbucks-challenger",
+              "text": "Order from **Luckin Coffee** (瑞幸咖啡) — China's Starbucks challenger",
+              "link": "https://en.wikipedia.org/wiki/Luckin_Coffee"
+            },
+            {
+              "id": "shop-shein-china-s-fast-fashion-giant",
+              "text": "Shop **SHEIN** — China's fast fashion giant",
+              "link": "https://en.wikipedia.org/wiki/Shein"
+            },
+            {
+              "id": "browse-miniso-lifestyle-store-chinese-brand",
+              "text": "Browse **Miniso** (名创优品) — lifestyle store chain",
+              "link": "https://en.wikipedia.org/wiki/Miniso"
+            },
+            {
+              "id": "try-temu-pinduoduo-s-international-shopping-app",
+              "text": "Try **Temu** — Pinduoduo's international shopping app",
+              "link": "https://en.wikipedia.org/wiki/Temu_(marketplace)"
+            }
+          ]
+        },
+        {
+          "title": "Tech & Gadgets Going Viral",
+          "items": [
+            {
+              "id": "try-a-dji-drone-mini-air-or-mavic-series",
+              "text": "Try a **DJI** drone — global leader in consumer drones",
+              "link": "https://en.wikipedia.org/wiki/DJI",
+              "items": [
+                {
+                  "id": "learn-about-dji-s-chinese-origins-shenzhen",
+                  "text": "Learn about DJI's Chinese origins (Shenzhen)"
+                }
+              ]
+            },
+            {
+              "id": "explore-xiaomi-ecosystem-more-than-just-phones",
+              "text": "Explore **Xiaomi** ecosystem — more than just phones",
+              "link": "https://en.wikipedia.org/wiki/Xiaomi",
+              "items": [
+                {
+                  "id": "own-a-xiaomi-product-phone-tablet-accessory",
+                  "text": "Own a Xiaomi product (phone, tablet, accessory)"
+                }
+              ]
+            },
+            {
+              "id": "try-dreame-or-roborock-robot-vacuums",
+              "text": "Try **Dreame** or **Roborock** — robot vacuums",
+              "link": "https://en.wikipedia.org/wiki/Roborock"
+            },
+            {
+              "id": "check-out-anker-charging-accessories",
+              "text": "Check out **Anker** — charging accessories",
+              "link": "https://en.wikipedia.org/wiki/Anker_Innovations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "22. 挑战 Offbeat / Bucket List",
       "items": [
         {
           "title": "Experiences",
@@ -2221,7 +2359,7 @@ export const checklistData = {
       ]
     },
     {
-      "title": "22. 🏆 文化奖项 Cultural Awards to Follow",
+      "title": "23. 🏆 文化奖项 Cultural Awards to Follow",
       "items": [
         {
           "title": "Film Awards — Establishment",
