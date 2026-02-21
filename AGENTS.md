@@ -155,4 +155,4 @@ No CI/CD - changes are live immediately after push.
 - Don't change item IDs casually (breaks user data)
 - Don't add heavy JavaScript libraries
 - Don't modify the HOMM3 aesthetic without good reason
-- Don't use emojis in code (they're fine in checklist content)
+- Don't use emojis in Powershell code (they're fine in checklist content)

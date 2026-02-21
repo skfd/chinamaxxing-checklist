@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 3;
+export const DATA_VERSION = 4;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -789,11 +789,6 @@ export const checklistData = {
                   "link": "https://en.wikipedia.org/wiki/To_Live_(novel)"
                 },
                 {
-                  "id": "three-body-problem-liu-cixin",
-                  "text": "\"Three-Body Problem\" (三体) — Liu Cixin",
-                  "link": "https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)"
-                },
-                {
                   "id": "red-sorghum-mo-yan",
                   "text": "\"Red Sorghum\" — Mo Yan",
                   "link": "https://en.wikipedia.org/wiki/Red_Sorghum_(novel)"
@@ -802,8 +797,45 @@ export const checklistData = {
                   "id": "love-in-a-fallen-city-eileen-chang",
                   "text": "\"Love in a Fallen City\" — Eileen Chang",
                   "link": "https://en.wikipedia.org/wiki/Love_in_a_Fallen_City_(novella)"
+                },
+                {
+                  "id": "fortress-besieged-qian-zhongshu",
+                  "text": "\"Fortress Besieged\" (围城) — Qian Zhongshu",
+                  "link": "https://en.wikipedia.org/wiki/Fortress_Besieged_(novel)"
+                },
+                {
+                  "id": "the-seventh-day-yu-hua",
+                  "text": "\"The Seventh Day\" (第七天) — Yu Hua",
+                  "link": "https://en.wikipedia.org/wiki/The_Seventh_Day_(novel)"
                 }
               ]
+            },
+            {
+              "id": "read-the-three-body-trilogy",
+              "text": "Read the **Three-Body Trilogy** (三体三部曲) — Liu Cixin",
+              "link": "https://en.wikipedia.org/wiki/Remembrance_of_Earth%27s_Past",
+              "items": [
+                {
+                  "id": "the-three-body-problem-book-1",
+                  "text": "\"The Three-Body Problem\" (三体) — Book 1",
+                  "link": "https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)"
+                },
+                {
+                  "id": "the-dark-forest-book-2",
+                  "text": "\"The Dark Forest\" (黑暗森林) — Book 2",
+                  "link": "https://en.wikipedia.org/wiki/The_Dark_Forest"
+                },
+                {
+                  "id": "death-s-end-book-3",
+                  "text": "\"Death's End\" (死神永生) — Book 3",
+                  "link": "https://en.wikipedia.org/wiki/Death%27s_End"
+                }
+              ]
+            },
+            {
+              "id": "illumine-lingao-time-travel-epic",
+              "text": "\"Illumine Lingao\" (临高启明) — time travel alternate history epic",
+              "link": "https://en.wikipedia.org/wiki/Illumine_Lingao"
             }
           ]
         },
