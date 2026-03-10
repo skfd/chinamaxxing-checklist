@@ -1,5 +1,5 @@
 export const CODE_VERSION = 2;
-export const DATA_VERSION = 6;
+export const DATA_VERSION = 7;
 
 export const checklistData = {
   "version": DATA_VERSION,
@@ -1135,6 +1135,47 @@ export const checklistData = {
         {
           "id": "own-at-least-one-item-with-chinese-design-elements",
           "text": "Own at least one item with Chinese design elements"
+        },
+        {
+          "id": "discover-chinese-high-fashion-designers",
+          "text": "Discover Chinese high fashion — designers and tastemakers",
+          "items": [
+            {
+              "id": "follow-guo-pei",
+              "text": "**Guo Pei** (郭培) — haute couture master, internationally famous for Rihanna's Met Gala cape",
+              "link": "https://www.vogue.com/article/guo-pei-designer-profile"
+            },
+            {
+              "id": "follow-uma-wang",
+              "text": "**Uma Wang** (王汁) — sculptural womenswear, a leading voice in Chinese luxury fashion",
+              "link": "https://www.businessoffashion.com/people/uma-wang/"
+            },
+            {
+              "id": "follow-ms-min",
+              "text": "**Ms Min** — Shanghai-based minimalist label by Min Chen, acclaimed on the international runway",
+              "link": "https://www.vogue.com/fashion-shows/designer/ms-min"
+            },
+            {
+              "id": "follow-angel-chen",
+              "text": "**Angel Chen** (陈安琪) — bold colour and craft, one of China's most exciting emerging luxury designers",
+              "link": "https://www.businessoffashion.com/people/angel-chen/"
+            },
+            {
+              "id": "follow-masha-ma",
+              "text": "**Masha Ma** — Paris-trained Chinese designer known for structured, futuristic silhouettes",
+              "link": "https://www.businessoffashion.com/people/masha-ma/"
+            },
+            {
+              "id": "follow-huishan-zhang",
+              "text": "**Huishan Zhang** (张汇珊) — London-based Chinese couturier celebrated for intricate embroidery",
+              "link": "https://www.businessoffashion.com/people/huishan-zhang/"
+            },
+            {
+              "id": "follow-angelica-cheung",
+              "text": "**Angelica Cheung** (张宇) — founding Editor-in-Chief of Vogue China, the most influential figure in Chinese fashion media",
+              "link": "https://www.businessoffashion.com/people/angelica-cheung/"
+            }
+          ]
         }
       ]
     },
